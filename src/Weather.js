@@ -5,11 +5,11 @@ export default function Weather() {
   let weatherData = {
     city: "Halifax",
     date: "Friday, Nov 18th, 4:45pm",
-    description: "partly cloudy",
+    description: "sunny",
     imgLink: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
-    humidity: 32,
-    wind: 13,
-    temp: 12,
+    humidity: 14,
+    wind: 23,
+    temp: -1,
   };
   return (
     <div className="Weather">
@@ -68,7 +68,10 @@ export default function Weather() {
         </form>
       </div>
       <div className="mice-type">
-        <a href="https://github.com/spethstation/Weather-App">
+        <a
+          href="https://github.com/spethstation/weather-app-react"
+          rel="noreferrer"
+        >
           <div className="source-link">open-source code by elspeth humble</div>
         </a>
       </div>
