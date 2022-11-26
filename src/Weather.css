@@ -78,6 +78,11 @@ form {
   text-align: center;
 }
 
+img {
+  width: 120px;
+  height: 120px;
+}
+
 .index-page {
   display: block;
   max-width: 515px;
