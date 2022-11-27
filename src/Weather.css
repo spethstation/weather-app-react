@@ -19,6 +19,7 @@ h1 {
   display: block;
   line-height: 1em;
   max-height: 2em;
+  padding-bottom: 10px;
 }
 
 h2 {
