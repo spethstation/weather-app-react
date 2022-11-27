@@ -1,5 +1,6 @@
 import React from "react";
 import TodaysDate from "./TodaysDate";
+import Temperature from "./Temperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -8,17 +9,7 @@ export default function WeatherInfo(props) {
         <TodaysDate date={props.info.date} />
       </h4>
       <h1>{props.info.city}</h1>
-      <div className="row">
-        <div className="col-5"></div>
-        <div className="col-2">
-          <h2>{props.info.temperature}</h2>
-        </div>
-        <div className="col-5">
-          <div className="temp-links">
-            <a href="/">C</a> | <a href="/">F</a>
-          </div>
-        </div>
-      </div>
+      <Temperature celsius={props.info.temperature} />
 
       <div className="row">
         <div className="col-4">
