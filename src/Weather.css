@@ -73,6 +73,7 @@ h3 {
   font-size: 22px;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 500;
+  margin-bottom: 0px;
 }
 
 form {
@@ -131,6 +132,10 @@ img {
   margin-top: 20px;
 }
 
+.five-day-forecast {
+  padding: 0 12px 0 12px;
+}
+
 .forecast {
   text-align: center;
   border-radius: 50px;
@@ -143,6 +148,11 @@ img {
   text-align: center;
   font-size: 30px;
   padding-bottom: 2px;
+}
+
+.forecast-icons img {
+  width: 50px;
+  height: 50px;
 }
 
 .day-of-week {
@@ -185,6 +195,10 @@ img {
   color: #fff;
 }
 
+.five-day-cels {
+  margin-bottom: 0px;
+}
+
 #city-search {
   text-align: center;
   margin: 0px 5px 10px 5px;
@@ -209,10 +223,6 @@ img {
   font-size: 16px;
   font-weight: 500px;
   margin-top: 10px;
-}
-
-#five-day-cels {
-  margin-bottom: 0px;
 }
 
 #cels-temp {
