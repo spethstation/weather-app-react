@@ -43,6 +43,7 @@ export default function Weather(props) {
         <div className="index-page">
           <WeatherInfo info={weatherData} />
           <hr />
+          <h4>Daily Average Forecast</h4>
           <WeatherForecast coordinates={weatherData.coordinates} />
           <br />
 

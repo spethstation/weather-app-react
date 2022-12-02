@@ -11,13 +11,11 @@ export default function WeatherForecast(props) {
   }, [props.coordinates]);
 
   function handleResponse(response) {
-    console.log(response.data);
     setForecastData(response.data.daily);
     setForecastReady(true);
   }
 
   if (forecastReady) {
-    console.log(forecastData);
     return (
       <div className="five-day-forecast">
         <div className="row">
