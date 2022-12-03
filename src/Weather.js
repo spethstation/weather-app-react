@@ -20,6 +20,7 @@ export default function Weather(props) {
       icon: response.data.condition.icon_url,
       date: new Date(response.data.time * 1000),
     });
+    setCity("");
   }
 
   function search() {
@@ -49,6 +50,7 @@ export default function Weather(props) {
 
           <form onSubmit={citySubmit}>
             <input
+              value={city}
               type="text"
               placeholder="search for a city"
               autoComplete="off"
