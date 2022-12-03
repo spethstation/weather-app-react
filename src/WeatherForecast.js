@@ -20,9 +20,6 @@ export default function WeatherForecast(props) {
       <div className="five-day-forecast">
         <div className="row">
           <div className="col forecast">
-            <ForecastEachDay data={forecastData[0]} />
-          </div>
-          <div className="col forecast">
             <ForecastEachDay data={forecastData[1]} />
           </div>
           <div className="col forecast">
@@ -33,6 +30,9 @@ export default function WeatherForecast(props) {
           </div>
           <div className="col forecast">
             <ForecastEachDay data={forecastData[4]} />
+          </div>
+          <div className="col forecast">
+            <ForecastEachDay data={forecastData[5]} />
           </div>
         </div>
       </div>
@@ -45,6 +45,6 @@ export default function WeatherForecast(props) {
 
     axios.get(apiUrl).then(handleResponse);
 
-    return "Loading";
+    return "Loading...";
   }
 }
