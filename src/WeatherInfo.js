@@ -11,8 +11,8 @@ export default function WeatherInfo(props) {
       <h1>{props.info.city}</h1>
       <Temperature celsius={props.info.temperature} />
 
-      <div className="row">
-        <div className="col-4">
+      <div className="row weather-contents">
+        <div className="col-3">
           <div className="row">
             <div className="humid-wind">Humidity</div>
           </div>
@@ -21,13 +21,13 @@ export default function WeatherInfo(props) {
           </div>
         </div>
 
-        <div className="col-4">
+        <div className="col-6">
           <div className="today-weather">
-            <img src={props.info.icon} alt="🌝" />
+            <img src={props.info.icon} alt="🌝" class="center" />
           </div>
         </div>
 
-        <div className="col-4">
+        <div className="col-3">
           <div className="row">
             <div className="humid-wind">Windspeed</div>
           </div>

@@ -103,6 +103,13 @@ input[type="text"] {
   background: rgb(222, 225, 244, 0.7);
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .today-weather {
   font-size: 90px;
   text-align: center;
@@ -110,12 +117,16 @@ input[type="text"] {
   top: -25px;
 }
 
+.today-weather img {
+  text-align: center;
+}
+
 .temp-links {
   font-family: Quicksand, sans-serif;
   text-align: left;
   font-size: 20px;
   font-weight: 500px;
-  padding: 20px 0px 0px 5px;
+  padding: 20px 0px 0px 12px;
 }
 
 .col {
@@ -138,6 +149,7 @@ input[type="text"] {
   font-size: 16px;
   font-weight: 600px;
   margin-top: 20px;
+  margin: 5px;
 }
 
 .five-day-forecast {
@@ -233,6 +245,38 @@ input[type="text"] {
   margin-top: 10px;
 }
 
+.weather-contents {
+  margin-top: 10px;
+}
+
 #cels-temp {
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+  .index-page {
+    margin: 10px;
+  }
+
+  .day-5 {
+    display: none;
+  }
+
+  .today-weather img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .humid-amount,
+  .wind-amount,
+  .humid-wind {
+    display: none;
+  }
 }

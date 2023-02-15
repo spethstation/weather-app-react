@@ -16,11 +16,11 @@ export default function Temperature(props) {
     return (
       <div>
         <div className="row">
-          <div className="col-5"></div>
-          <div className="col-2">
+          <div className="col-4"></div>
+          <div className="col-4">
             <h2>{props.celsius}</h2>
           </div>
-          <div className="col-5">
+          <div className="col-4">
             <div className="temp-links">
               C |{" "}
               <a href="/" onClick={convertToFahren}>
@@ -36,11 +36,11 @@ export default function Temperature(props) {
     return (
       <div>
         <div className="row">
-          <div className="col-5"></div>
-          <div className="col-2">
+          <div className="col-4"></div>
+          <div className="col-4">
             <h2>{Math.round(fahrenheit)}</h2>
           </div>
-          <div className="col-5">
+          <div className="col-4">
             <div className="temp-links">
               <a href="/" onClick={convertToCels}>
                 C

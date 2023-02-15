@@ -17,22 +17,24 @@ export default function WeatherForecast(props) {
 
   if (forecastReady) {
     return (
-      <div className="five-day-forecast">
-        <div className="row">
-          <div className="col forecast">
-            <ForecastEachDay data={forecastData[1]} />
-          </div>
-          <div className="col forecast">
-            <ForecastEachDay data={forecastData[2]} />
-          </div>
-          <div className="col forecast">
-            <ForecastEachDay data={forecastData[3]} />
-          </div>
-          <div className="col forecast">
-            <ForecastEachDay data={forecastData[4]} />
-          </div>
-          <div className="col forecast">
-            <ForecastEachDay data={forecastData[5]} />
+      <div className="container">
+        <div className="five-day-forecast">
+          <div className="row">
+            <div className="col forecast">
+              <ForecastEachDay data={forecastData[1]} />
+            </div>
+            <div className="col forecast">
+              <ForecastEachDay data={forecastData[2]} />
+            </div>
+            <div className="col forecast">
+              <ForecastEachDay data={forecastData[3]} />
+            </div>
+            <div className="col forecast">
+              <ForecastEachDay data={forecastData[4]} />
+            </div>
+            <div className="col forecast day-5">
+              <ForecastEachDay data={forecastData[5]} />
+            </div>
           </div>
         </div>
       </div>
