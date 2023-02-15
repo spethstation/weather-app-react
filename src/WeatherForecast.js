@@ -29,7 +29,7 @@ export default function WeatherForecast(props) {
             <div className="col forecast">
               <ForecastEachDay data={forecastData[3]} />
             </div>
-            <div className="col forecast">
+            <div className="col forecast day-4">
               <ForecastEachDay data={forecastData[4]} />
             </div>
             <div className="col forecast day-5">

@@ -81,8 +81,8 @@ form {
 }
 
 img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
 }
 
 input[type="text"] {
@@ -107,7 +107,6 @@ input[type="text"] {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 .today-weather {
@@ -261,6 +260,7 @@ input[type="text"] {
   h3 {
     font-size: 17px;
   }
+
   .index-page {
     margin: 10px;
   }
@@ -270,13 +270,19 @@ input[type="text"] {
   }
 
   .today-weather img {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
   }
 
   .humid-amount,
   .wind-amount,
   .humid-wind {
+    display: none;
+  }
+}
+
+@media (max-width: 354px) {
+  .day-4 {
     display: none;
   }
 }
